@@ -1,0 +1,398 @@
+---
+site:
+    lang: en
+    title: Component Examples GitHub
+    menu:
+        contact:
+            label: "123\u00A0456\u00A0789"
+            link: 'tel:+420123456789'
+        button:
+            label: CTA
+            link: '#anchor'
+        links:
+            - label: Link 1
+              link: 'https://google.com/'
+            - label: Link 2
+              link: 'https://seznam.cz/'
+    # section types:
+    # - hero • statement about page intent
+    # - cards • display grid of short cards
+    # - carousel • more profile cards in a row sliding from right to left
+    # - process • display of cards with step by step process
+    # - reviews • switchable (mobile accordion like) component for different longer text content
+    # - table • simple 2 column table for key value pairs (eg. contact)
+    # - accordion • simple text accordion for FAQ
+    # - about • short text section with CTA
+    # - form_b2b • inquiry form
+    # - form_b2c • #TODO
+    # - footer • footer section
+    sections:
+        # Hero section
+        # - use at start of page
+        # - texts with '#' (eg. colors, links) are required to be enclosed on '...' or "..."
+        # - #anchor links to element with "id: anchor" (notice id doesnt have # as it means 'id')
+        # - you may also use any relative or absolute URI - /page, https://youklid.cz/ respectively
+        # - you may notice the bg-color change results in inserted wave with corresponding transition
+        - section: name-your-section
+          type: hero
+          bg-color: '#FBFDFC'
+          headline: Hero section example
+          subheadline: Subheadline example. Lorem ipsum dolor sit amet!
+          button:
+              label: CTA
+              link: '#anchor'
+        - section: name-your-section
+          type: hero
+          bg-color: '#A1E7D7'
+          headline: Hero section example
+          subheadline: Subheadline example. Lorem ipsum dolor sit amet!
+          button:
+              label: CTA
+              link: 'https://youklid.cz/'
+        - section: name-your-section
+          type: cards
+          bg-color: '#FBFDFC'
+          id: 'anchor'
+          headline: Cards section
+          items:
+              - type: card
+                variant: default
+                headline: Card 1
+                paragraph: Lorem ipsum.
+              - type: card
+                variant: light
+                headline: Card 1
+                paragraph: Lorem ipsum.
+              - type: card
+                variant: dark
+                headline: Card 1
+                paragraph: Lorem ipsum.
+              - type: card
+                variant: transparent
+                headline: Card 1
+                paragraph: Lorem ipsum.
+              - type: card
+                variant: inverse
+                headline: Card 1
+                paragraph: Lorem ipsum.
+        - section: name-your-section
+          type: carousel
+          bg-color: '#FBFDFC'
+          headline: Carousel section
+          paragraph: >
+              Lorem ipsum.
+
+              Lorem ipsum.
+          items:
+              - type: card
+                headline: Name 1
+                image: https://assets.youklid.cz/upload/irena.webp
+              - type: card
+                headline: Name 2
+                image: https://assets.youklid.cz/upload/marie.webp
+              - type: card
+                headline: Name 3
+                image: https://assets.youklid.cz/upload/olena.webp
+          button:
+              label: CTA
+              link: '#anchor'
+        - section: name-your-section
+          type: process
+          bg-color: '#004D58'
+          headline: Process section
+          steps:
+              - type: feature-icon
+                headline: Step 1
+                paragraph: 'Lorem ipsum.'
+                icon: https://assets.youklid.cz/upload/icons/fill_a1e7d7.svg
+              - type: feature-icon
+                headline: Step 2
+                paragraph: 'Lorem ipsum.'
+                icon: https://assets.youklid.cz/upload/icons/card_a1e7d7.svg
+              - type: feature-icon
+                headline: Step 3
+                paragraph: 'Lorem ipsum.'
+                icon: https://assets.youklid.cz/upload/icons/key_a1e7d7.svg
+              - type: feature-icon
+                headline: Step 4
+                paragraph: 'Lorem ipsum.'
+                icon: https://assets.youklid.cz/upload/icons/award_a1e7d7.svg
+              - type: feature-icon
+                headline: Step 5
+                paragraph: 'Lorem ipsum.'
+                icon: https://assets.youklid.cz/upload/icons/time_a1e7d7.svg
+          button:
+              label: CTA
+              link: '#anchor'
+        - section: name-your-section
+          type: process
+          bg-color: '#004D58'
+          headline: Process section
+          steps:
+              - type: feature-icon
+                headline: Step 1
+                paragraph: 'Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum.'
+                icon: https://assets.youklid.cz/upload/icons/fill_a1e7d7.svg
+              - type: feature-icon
+                headline: Step 2
+                paragraph: 'Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum.'
+                icon: https://assets.youklid.cz/upload/icons/card_a1e7d7.svg
+              - type: feature-icon
+                headline: Step 3
+                paragraph: 'Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum.'
+                icon: https://assets.youklid.cz/upload/icons/key_a1e7d7.svg
+              - type: feature-icon
+                headline: Step 4
+                paragraph: 'Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum.'
+                icon: https://assets.youklid.cz/upload/icons/award_a1e7d7.svg
+              - type: feature-icon
+                headline: Step 5
+                paragraph: 'Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum. Lorem ipsum.'
+                icon: https://assets.youklid.cz/upload/icons/time_a1e7d7.svg
+          button:
+              label: CTA
+              link: '#anchor'
+        - section: name-your-section
+          type: reviews
+          bg-color: '#FBFDFC'
+          headline: Reviews section
+          items:
+              - type: review
+                headline: Headline 1
+                location: Location
+                price: X.XXX,-
+                services: services, services, services
+                image: https://placehold.co/70
+                paragraph: >
+                    Lorem ipsum.
+              - type: review
+                headline: Headline 2
+                location: Location
+                price: X.XXX,-
+                services: services, services, services
+                image: https://placehold.co/70
+                paragraph: >
+                    Lorem ipsum.
+              - type: review
+                headline: Headline 3
+                location: Location
+                price: X.XXX,-
+                services: services, services, services
+                image: https://placehold.co/70
+                paragraph: >
+                    Lorem ipsum.
+        - section: name-your-section
+          type: form_b2b
+          bg-color: '#004D58'
+          headline: Headline **headline**?
+          paragraph: >
+              Lorem ipsum.
+
+              Lorem ipsum.
+          company: Field 1
+          phone: Field 2
+          email: Field 3
+          note: Field 4
+          button:
+              label: Button
+        - section: name-your-section
+          type: table
+          bg-color: '#FBFDFC'
+          headline: Table section
+          items:
+              - type: table-row
+                headline: Lorem
+                paragraph: ipsum
+              - type: table-row
+                headline: Lorem
+                paragraph: ipsum
+        - section: name-your-section
+          type: accordion
+          bg-color: '#A1E7D7'
+          headline: Accordion section
+          items:
+              - type: accordion-item
+                headline: Lorem
+                paragraph: Ipsum dolor sit amet.
+              - type: accordion-item
+                headline: Lorem
+                paragraph: Ipsum dolor sit amet.
+        - section: name-your-section
+          type: about
+          bg-color: '#FBFDFC'
+          headline: About section
+          paragraph: >
+              Lorem ipsum.
+
+              **Lorem ipsum**
+
+              - Lorem
+
+              - Ipsum
+          button:
+              label: CTA
+              link: https://youklid.cz/o-nas
+
+        - section: name-your-section
+          type: masonry
+          bg-color: '#FBFDFC'
+          id: 'masonry'
+          headline: Masonry section
+          paragraph: >
+              Lorem ipsum.
+          items:
+              - type: item
+                label: Label
+                image: https://placehold.co/600
+              - type: item
+                label: Label
+                image: https://placehold.co/600x400
+              - type: item
+                label: Label
+                image: https://placehold.co/600x200
+              - type: item
+                label: Label
+                image: https://placehold.co/600x800
+              - type: item
+                label: Label
+                image: https://placehold.co/600x400
+              - type: item
+                label: Label
+                image: https://placehold.co/600
+        # Flash cards section
+        # - put exactly 5 items due to limitation is CSS animation
+        # - colors: default, purple
+        # - align: center, right
+        - section: name-your-section
+          type: flash_cards
+          bg-color: '#FBFDFC'
+          color: purple
+          align: center
+          line-1: Lorem
+          line-2: lorem ipsum dolor.
+          items:
+              - type: item
+                paragraph: ipsum
+              - type: item
+                paragraph: dolor
+              - type: item
+                paragraph: sit
+              - type: item
+                paragraph: amet
+              - type: item
+                paragraph: lorem
+
+        - section: name-your-section
+          type: logos
+          bg-color: '#FBFDFC'
+          headline: Logos section
+          rows: 1
+          items:
+              - type: item
+                image: https://placehold.co/200x60/orange/white@3x.png
+              - type: item
+                image: https://placehold.co/200x60/orange/white@3x.png
+
+        - section: name-your-section
+          type: logos
+          bg-color: '#FBFDFC'
+          headline: Logos section
+          rows: 1
+          items:
+              - type: item
+                image: https://placehold.co/200x60/orange/white@3x.png
+              - type: item
+                image: https://placehold.co/200x60/orange/white@3x.png
+              - type: item
+                image: https://placehold.co/200x60/orange/white@3x.png
+              - type: item
+                image: https://placehold.co/200x60/orange/white@3x.png
+              - type: item
+                image: https://placehold.co/200x60/a1e7d7/fbfdfc@3x.png
+              - type: item
+                image: https://placehold.co/200x60/004d58/fbfdfc@3x.png
+              - type: item
+                image: https://placehold.co/200x60/a1e7d7/fbfdfc@3x.png
+              - type: item
+                image: https://placehold.co/200x60/004d58/fbfdfc@3x.png
+
+        - section: name-your-section
+          type: logos
+          bg-color: '#FBFDFC'
+          headline: Logos section
+          rows: 1
+          items:
+              - type: item
+                image: https://placehold.co/200x60/orange/white@3x.png
+              - type: item
+                image: https://placehold.co/200x60/orange/white@3x.png
+              - type: item
+                image: https://placehold.co/200x60/orange/white@3x.png
+              - type: item
+                image: https://placehold.co/200x60/orange/white@3x.png
+              - type: item
+                image: https://placehold.co/200x60/a1e7d7/fbfdfc@3x.png
+              - type: item
+                image: https://placehold.co/200x60/004d58/fbfdfc@3x.png
+              - type: item
+                image: https://placehold.co/200x60/a1e7d7/fbfdfc@3x.png
+              - type: item
+                image: https://placehold.co/200x60/004d58/fbfdfc@3x.png
+              - type: item
+                image: https://placehold.co/200x60/red/white@3x.png
+              - type: item
+                image: https://placehold.co/200x60/orange/white@3x.png
+              - type: item
+                image: https://placehold.co/200x60/red/white@3x.png
+              - type: item
+                image: https://placehold.co/200x60/orange/white@3x.png
+              - type: item
+                image: https://placehold.co/200x60/a1e7d7/fbfdfc@3x.png
+              - type: item
+                image: https://placehold.co/200x60/004d58/fbfdfc@3x.png
+              - type: item
+                image: https://placehold.co/200x60/a1e7d7/fbfdfc@3x.png
+              - type: item
+                image: https://placehold.co/200x60/004d58/fbfdfc@3x.png
+        - section: name-your-section
+          type: downloads
+          bg-color: '#FBFDFC'
+          headline: Downloads section
+          paragraph: Dropdown text
+          download-all: Download all
+          items:
+              - type: file
+                label: File 1
+                image: https://placehold.co/600
+                link: https://placehold.co/600
+              - type: file
+                label: File 2
+                image: https://placehold.co/600
+                link: https://placehold.co/600
+              - type: file
+                label: File 3
+                image: https://placehold.co/600
+                link: https://placehold.co/600
+              - type: file
+                label: File 4
+                image: https://placehold.co/600
+                link: https://placehold.co/600
+              - type: file
+                label: File 5
+                image: https://placehold.co/600
+                link: https://placehold.co/600
+              - type: file
+                label: File 6
+                image: https://placehold.co/600
+                link: https://placehold.co/600
+              - type: file
+                label: File 7
+                image: https://placehold.co/600
+                link: https://placehold.co/600
+              - type: file
+                label: File 8
+                image: https://placehold.co/600
+                link: https://placehold.co/600
+        - section: name-your-section
+          type: footer
+          bg-color: '#A1E7D7'
